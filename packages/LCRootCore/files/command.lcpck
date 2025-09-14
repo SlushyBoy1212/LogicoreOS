@@ -1,1 +1,2 @@
-print("cannot use command.")
+import os
+os.system("python3 packages/Core/core-error cannot run with command.")
