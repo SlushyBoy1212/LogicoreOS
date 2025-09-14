@@ -1,6 +1,6 @@
 {
   "packages": [
-    {"id": 0, "name": "LCPacman"},
-    {"id": 1, "name": "LCRootCore"}
+    {"id": 0, "foldername": "LCPacman", "name": "lcpkg"},
+    {"id": 1, "foldername": "LCRootCore", "name": "root"}
   ]
 }
