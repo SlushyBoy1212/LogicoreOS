@@ -1,6 +1,6 @@
 {
   "root": "/packages/LCPacman",
-  "python-packages": ["requests"],
+  "python-packages": ["requests, firebase-admin"],
   "logi-packages": [1],
   "command": "lcpkg",
   "main": "main.lcpck"
