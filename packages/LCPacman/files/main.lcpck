@@ -54,19 +54,19 @@ if update or download or remove:
   	if update:
 			if debug:
 				print("yes")
-			os.system("installvenv/bin/python3 packages/LCPacman/update.py pack-name debug")
+			os.system("installvenv/bin/python3 packages/LCPacman/update.lcpck pack-name debug")
 		if debug:
 			print("download?")
 		if download:
 			if debug:
 				print("yes")
-			os.system("installvenv/bin/python3 packages/LCPacman/download.py pack-name debug")
+			os.system("installvenv/bin/python3 packages/LCPacman/download.lcpck pack-name debug")
 		if debug:
 			print("remove?")
 		if remove:
 			if debug:
 				print("yes")
-			os.system("installvenv/bin/python3 packages/LCPacman/remove.py pack-name debug")
+			os.system("installvenv/bin/python3 packages/LCPacman/remove.lcpck pack-name debug")
 
 		catch:
 			print("ERROR: an unknown error occored.")
