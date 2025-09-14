@@ -1,0 +1,7 @@
+{
+  "root": "/packages/depman",
+  "python-packages": ["requests"],
+  "logi-packages": [1],
+  "command": "depman",
+  "main": "command.lcpck"
+}
