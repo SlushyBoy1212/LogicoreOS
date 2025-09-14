@@ -1,0 +1,4 @@
+import sys
+debug = false
+if sys.argv[3] == "true"
+  debug = true
