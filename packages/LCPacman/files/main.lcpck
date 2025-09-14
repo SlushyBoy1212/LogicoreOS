@@ -8,7 +8,7 @@ update = download
 params = sys.argv
 #####
 try:
-	if sys.argv[2] == "-Debug":
+	if sys.argv[3] == "-Debug":
 		debug == true
 		print(sys.argv)
 		print("check for debug...")
@@ -18,19 +18,19 @@ except Exception as e:
 try:
 	if debug:
 		print("update?")
-  if sys.argv[0].lower == "update":
+  if sys.argv[1].lower == "update":
 		if debug:
 			print("yes")
     update = true
 	if debug:
 		print("download?")
-	if sys.argv[0].lower == "fetch":
+	if sys.argv[1].lower == "fetch":
 		if debug:
 			print("yes")
 		download = true
 	if debug:
 		print("remove?")
-	if sys.argv[0].lower == "kill":
+	if sys.argv[1].lower == "kill":
 		if debug:
 			print("yes")
 		remove = true
@@ -41,7 +41,7 @@ if update or download or remove:
 	if debug:
 		print("try params")
 	try:
-		pack-name = sys.argv[1]
+		pack-name = sys.argv[2]
 		test = true
 	except Exception as e:
 		discard = e
