@@ -4,4 +4,9 @@
     {"id": 1, "foldername": "LCRootCore", "name": "root"},
     {"id": 2, "foldername": "depman", "name": "root-depman"}
   ]
+  "pkgs": [
+    "LcPacman",
+    "LcRootCore",
+    "depman"
+  ]
 }
