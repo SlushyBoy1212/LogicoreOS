@@ -1,0 +1,10 @@
+import sys
+class Colors:
+    RED = '\033[31m'
+    YELLOW = '\033[33m'
+    RESET = '\033[0m'  # Resets all formatting
+try:
+  print(f"{Colors.YELLOW}Warning: sys.argv[1]{Colors.RESET}")
+except Exception as e:
+  print(f"{Colors.RED}Warning: unknown.{Colors.RESET}")
+  void = e
