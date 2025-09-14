@@ -1,0 +1,2 @@
+import os
+os.system("python3 packages/Core/core-error.lcpck cannot run with command.")
