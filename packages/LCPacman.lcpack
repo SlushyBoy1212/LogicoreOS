@@ -1,3 +1,0 @@
-def lcpacman(command):
-   if command.startswith("lcpackman "):
-	   pass # do later
