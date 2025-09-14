@@ -2,6 +2,6 @@
   "root": "/packages/LCPacman",
   "python-packages": ["requests"],
   "logi-packages": [1],
-  "command": "pacman",
+  "command": "lcpkg",
   "main": "main.lcpck"
 }
