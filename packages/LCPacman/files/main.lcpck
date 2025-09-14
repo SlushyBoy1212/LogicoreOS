@@ -13,8 +13,8 @@ try:
 		print(sys.argv)
 		print("check for debug...")
 		print("debug found")
-catch:
-	pass
+except Exception as e:
+	discard = e
 try:
 	if debug:
 		print("update?")
@@ -34,15 +34,17 @@ try:
 		if debug:
 			print("yes")
 		remove = true
-catch:
-  print("ERROR: needs 1 Parameter.")
+except Exception as e:
+	discard = e
+  	print("ERROR: needs 1 Parameter.")
 if update or download or remove:
 	if debug:
 		print("try params")
 	try:
 		pack-name = sys.argv[1]
 		test = true
-	catch:
+	except Exception as e:
+		discard = e
 		print("ERROR: needs 1 Parameter: Package Name.")
 	if test:
 		if debug:
@@ -68,5 +70,6 @@ if update or download or remove:
 				print("yes")
 			os.system("installvenv/bin/python3 packages/LCPacman/remove.lcpck pack-name debug")
 
-		catch:
+		except Exception as e:
+			discard = e
 			print("ERROR: an unknown error occored.")
