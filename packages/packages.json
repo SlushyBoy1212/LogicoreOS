@@ -1,6 +1,7 @@
 {
   "packages": [
     {"id": 0, "foldername": "LCPacman", "name": "lcpkg"},
-    {"id": 1, "foldername": "LCRootCore", "name": "root"}
+    {"id": 1, "foldername": "LCRootCore", "name": "root"},
+    {"id": 2, "foldername": "depman", "name": "root-depman"}
   ]
 }
