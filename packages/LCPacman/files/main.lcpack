@@ -1,1 +1,72 @@
+import os
+import sys
+import json
+#####
+remove = false
+download = remove
+update = download
+params = sys.argv
+#####
+try:
+	if sys.argv[2] == "-Debug":
+		debug == true
+		print(sys.argv)
+		print("check for debug...")
+		print("debug found")
+catch:
+	pass
+try:
+	if debug:
+		print("update?")
+  if sys.argv[0].lower == "update":
+		if debug:
+			print("yes")
+    update = true
+	if debug:
+		print("download?")
+	if sys.argv[0].lower == "fetch":
+		if debug:
+			print("yes")
+		download = true
+	if debug:
+		print("remove?")
+	if sys.argv[0].lower == "kill":
+		if debug:
+			print("yes")
+		remove = true
+catch:
+  print("ERROR: needs 1 Parameter.")
+if update or download or remove:
+	if debug:
+		print("try params")
+	try:
+		pack-name = sys.argv[1]
+		test = true
+	catch:
+		print("ERROR: needs 1 Parameter: Package Name.")
+	if test:
+		if debug:
+			print("try other")
+		try:
 
+			if debug:
+				print("update?")
+  	if update:
+			if debug:
+				print("yes")
+			os.system("installvenv/bin/python3 packages/LCPacman/update.py pack-name debug")
+		if debug:
+			print("download?")
+		if download:
+			if debug:
+				print("yes")
+			os.system("installvenv/bin/python3 packages/LCPacman/download.py pack-name debug")
+		if debug:
+			print("remove?")
+		if remove:
+			if debug:
+				print("yes")
+			os.system("installvenv/bin/python3 packages/LCPacman/remove.py pack-name debug")
+
+		catch:
+			print("ERROR: an unknown error occored.")
