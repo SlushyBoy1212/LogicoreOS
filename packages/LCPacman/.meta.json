@@ -1,0 +1,8 @@
+{
+  "root": "/packages/",
+  "python-packages": [],
+  "logi-packages": [],
+  "id": 0,
+  "command": "packman",
+  "main": main.lcpack
+}
