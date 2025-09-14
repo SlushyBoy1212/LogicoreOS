@@ -1,0 +1,6 @@
+{
+  "packages": [
+    {"id": 0, "name": "LCPacman"},
+    {"id": 1, "name": "LCRootCore"}
+  ]
+}
